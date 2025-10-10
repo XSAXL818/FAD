@@ -6,6 +6,7 @@ language = "chinese"
 src = "src"
 
 [output.html]
-theme = "theme"
-
+fold.enable = true
+fold.level = 2
 default-theme = "rust"
+
