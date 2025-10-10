@@ -1,0 +1,11 @@
+[book]
+title = "前后端学习"
+authors = ["XSAXL818"]
+description = "用于培训的前后端学习规划"
+language = "chinese"
+src = "src"
+
+[output.html]
+theme = "theme"
+
+default-theme = "rust"
