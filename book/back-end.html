@@ -176,15 +176,93 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="后端"><a class="header" href="#后端">后端</a></h1>
+<h3 id="一后端的核心定义"><a class="header" href="#一后端的核心定义">一、后端的核心定义</a></h3>
+<p><strong>后端</strong>是指运行在服务器上的，用户无法直接看到的部分。它负责处理业务逻辑、管理数据、为用户（前端）提供服务和数据支持。</p>
+<p>简单来说，它的工作流程是这样的：</p>
+<ol>
+<li><strong>接收请求</strong>：前端（浏览器、App）发起一个请求（比如“登录”、“加载新闻列表”）。</li>
+<li><strong>处理业务逻辑</strong>：后端根据请求执行相应的操作（比如验证密码、从数据库查询新闻）。</li>
+<li><strong>与数据库交互</strong>：从数据库读取数据，或将新数据写入数据库。</li>
+<li><strong>返回响应</strong>：将处理结果（通常是JSON或HTML格式的数据）返回给前端。</li>
+</ol>
+<h3 id="二后端开发具体做什么核心技术组件"><a class="header" href="#二后端开发具体做什么核心技术组件">二、后端开发具体做什么？（核心技术组件）</a></h3>
+<h4 id="1-后端编程语言"><a class="header" href="#1-后端编程语言">1. 后端编程语言</a></h4>
+<p>这是后端的“工作语言”，开发者用它来编写业务逻辑。常见的有：</p>
+<ul>
+<li><strong>JavaScript (Node.js)</strong>：允许用JavaScript写后端，前后端语言统一，学习曲线平滑。</li>
+<li><strong>Python</strong>：语法简洁，开发效率高，拥有Django、Flask等强大框架。</li>
+<li><strong>Java</strong>：稳定、健壮，性能强大，是大型企业级应用的首选。</li>
+<li><strong>Go (Golang)</strong>：由Google开发，以高性能和高并发能力著称，语法简单。</li>
+<li><strong>PHP</strong>：为Web而生，非常流行，尤其擅长构建WordPress等网站。</li>
+<li><strong>C#</strong>：通常与.NET框架搭配，在Windows生态中非常强大。</li>
+</ul>
+<p>本课程建议：使用Python入手，不仅入门容易、也更容易结合大模型开发(如YOLO)。</p>
+<h4 id="2-web-框架"><a class="header" href="#2-web-框架">2. Web 框架</a></h4>
+<p>框架是基于某种语言的“工具箱”，它提供了一套基础结构和通用功能，让开发者能更快速、更规范地构建应用，而不用一切从零开始。</p>
+<ul>
+<li><strong>Python 框架</strong>：Django（大而全）， Flask（轻量灵活）</li>
+</ul>
+<h4 id="3-数据库"><a class="header" href="#3-数据库">3. 数据库</a></h4>
+<p>数据库是应用的“记忆库”，所有需要持久化存储的数据（用户信息、商品数据、文章内容）都存放在这里。后端负责与数据库“对话”。</p>
+<ul>
+<li><strong>关系型数据库</strong>
+<ul>
+<li><strong>特点</strong>：数据以表格形式存储，结构严谨，使用SQL语言操作。</li>
+<li><strong>代表</strong>：<strong>MySQL</strong>（最流行）, <strong>SQLite</strong>（小巧轻便，小型应用使用）</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-api"><a class="header" href="#4-api">4. API</a></h4>
+<p>API是后端与前端的“约定”和“桥梁”。后端将功能封装成一个个API接口，前端按照预定好的规则（用什么网址、传什么参数）来调用这些接口，获取数据或执行操作。</p>
+<ul>
+<li><strong>RESTful API</strong>：是目前最流行、最规范的API设计风格。</li>
+</ul>
+<h4 id="5-服务器"><a class="header" href="#5-服务器">5. 服务器</a></h4>
+<p>服务器是一台24小时不关机的、高性能的计算机。后端代码就部署运行在这台服务器上，随时准备响应来自全球的请求。</p>
+<ul>
+<li>常见的服务器软件有：Nginx, Apache。</li>
+</ul>
+<h4 id="6-缓存"><a class="header" href="#6-缓存">6. 缓存</a></h4>
+<p>为了提升网站速度，将一些频繁读取但又不易变化的数据（如网站首页）临时存放在读取速度极快的内存中。</p>
+<ul>
+<li><strong>代表</strong>：<strong>Redis</strong>, Memcached。</li>
+</ul>
+<h3 id="三一个生动的例子用户登录"><a class="header" href="#三一个生动的例子用户登录">三、一个生动的例子：用户登录</a></h3>
+<p>让我们通过“用户登录”这个场景，串联起上述所有组件：</p>
+<ol>
+<li><strong>前端</strong>：用户在登录页输入用户名和密码，点击“登录”按钮。</li>
+<li><strong>HTTP请求</strong>：前端将用户名和密码通过一个 <strong>API</strong>（例如 <code>POST /api/login</code>）发送给<strong>后端</strong>。</li>
+<li><strong>后端（框架+语言）</strong>：运行在<strong>服务器</strong>上的、用 <strong>Python（Django框架）</strong> 编写的后端程序接收到了这个请求。</li>
+<li><strong>业务逻辑处理</strong>：后端程序开始工作：
+<ul>
+<li><strong>验证数据</strong>：检查数据格式是否正确。</li>
+<li><strong>查询数据库</strong>：根据用户名，在 <strong>MySQL数据库</strong> 的用户表中查找对应的用户记录和加密后的密码。</li>
+<li><strong>密码校验</strong>：将用户输入的密码加密，与数据库中的密文密码进行比对。</li>
+<li><strong>生成凭证</strong>：如果密码正确，生成一个“令牌”，表示用户已登录。</li>
+</ul>
+</li>
+<li><strong>缓存</strong>：后端可能会将这个“令牌”存入 <strong>Redis</strong>，以便后续快速验证用户身份。</li>
+<li><strong>HTTP响应</strong>：后端处理完毕，通过 <strong>API</strong> 返回一个响应给前端。响应内容可能是：
+<ul>
+<li><code>{ "success": true, "token": "xyz123", "username": "小明" }</code>（登录成功）</li>
+<li><code>{ "success": false, "message": "用户名或密码错误" }</code>（登录失败）</li>
+</ul>
+</li>
+<li><strong>前端</strong>：前端收到响应，如果是成功，就将token保存起来，并跳转到网站首页。</li>
+</ol>
+<p><strong>在整个过程中，用户完全感知不到后端复杂的处理流程，他只知道“我登录成功了”。</strong></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="front-end.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="frontend/html01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
+                            <a rel="next prefetch" href="backend/python-base.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -192,10 +270,13 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="front-end.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="frontend/html01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
+                    <a rel="next prefetch" href="backend/python-base.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>

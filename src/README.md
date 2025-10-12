@@ -11,16 +11,24 @@
 ---
 
 <div class="warning">
-<p>注意：</p>
+	<p>注意：</p>
     <p>
-        第一周（10月9日-10月10日）为通识课
-    </p>
-
+    	作业提交链接如下(飞书)
+	</p>
 </div>
+
+[分类培养工作交流群提交处](https://wcn6gmfkzss8.feishu.cn/docx/BcX3d1yTWoJ2V7xtSDtchBxYn3b)
+
+[全栈技术交流学习群提交处](https://wcn6gmfkzss8.feishu.cn/docx/F1SgdsklFo3TL3xFdwUcdfEzngf?from=from_copylink)
+
 
 ---
 
-
+<div class="warning">
+	<p>
+        第一周（10月9日-10月10日）为通识课
+    </p>
+</div>
 
 课程表：
 
@@ -33,7 +41,7 @@
 
 
 
-人员分类一：
+分类培养工作交流群人员分类：
 
 | 姓名 | 方向 |
 | :--: | ---- |
@@ -47,7 +55,7 @@
 |      | 后端 |
 |      | 前端 |
 
-人员分类二
+全栈技术交流学习群人员分类方向：
 
 | 姓名 | 方向 |
 | :--: | ---- |
