@@ -181,7 +181,7 @@
 <li>练习1：使用双层循环打印九九乘法表。</li>
 <li>掌握列表、元组、字典、集合，内置函数range的常用操作。</li>
 <li>练习2：计算天数。</li>
-<li>练习3：用户登录系统，运行时系统提示用户属于用户名和密码，系统返回是否登录成功，用列表或字典来保存已有用户的用户名和密码。</li>
+<li>练习3：用户登录系统，运行时系统提示输入用户名和密码，系统返回是否登录成功，用列表或字典来保存已有用户的用户名和密码。</li>
 </ol>
 <h2 id="参考"><a class="header" href="#参考">参考：</a></h2>
 <h3 id="将鼠标停留在代码上方后右上侧会出现按钮点击第二个运行按钮可以查看相关演示结果"><a class="header" href="#将鼠标停留在代码上方后右上侧会出现按钮点击第二个运行按钮可以查看相关演示结果">将鼠标停留在代码上方后，右上侧会出现按钮，点击第二个运行按钮可以查看相关演示结果</a></h3>
@@ -324,22 +324,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

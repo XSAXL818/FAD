@@ -197,7 +197,7 @@
 <div class="table-wrapper"><table><thead><tr><th>周数</th><th>时间段</th></tr></thead><tbody>
 <tr><td>第一周</td><td>10月9日-10月10日</td></tr>
 <tr><td>第二周</td><td>10月13-10月17日</td></tr>
-<tr><td></td><td></td></tr>
+<tr><td>第三周</td><td>10月20-10月24</td></tr>
 <tr><td></td><td></td></tr>
 </tbody></table>
 </div>
@@ -258,22 +258,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
