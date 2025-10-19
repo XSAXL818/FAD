@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>初次了解(第一周) - 前后端学习</title>
+        <title>初始python(第三周) - 前后端学习</title>
 
 
         <!-- Custom HTML head -->
@@ -175,41 +175,140 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="初次了解第一周10月9日-10月10日"><a class="header" href="#初次了解第一周10月9日-10月10日">初次了解（第一周10月9日-10月10日）</a></h1>
-<p>本周学习目标：</p>
+                        <h1 id="初始python第三周"><a class="header" href="#初始python第三周">初始python(第三周)</a></h1>
+<h2 id="学习任务"><a class="header" href="#学习任务">学习任务</a></h2>
 <ol>
-<li>掌握如何管理开发工具和项目代码的目录</li>
-<li>安装一些开发软件</li>
-<li>了解主流框架</li>
+<li>练习1：使用双层循环打印九九乘法表。</li>
+<li>掌握列表、元组、字典、集合，内置函数range的常用操作。</li>
+<li>练习2：计算天数。</li>
+<li>练习3：用户登录系统，运行时系统提示用户属于用户名和密码，系统返回是否登录成功，用列表或字典来保存已有用户的用户名和密码。</li>
 </ol>
-<h3 id="1目录管理"><a class="header" href="#1目录管理">1、目录管理</a></h3>
-<p>D盘下创建文件夹Development_Tools和文件夹Code,前者专门放用于开发的软件,后者专门放项目的代码,
-具体名字可以不一样。如下即可:</p>
-<p><img src="../imgs/1.png" alt="" /></p>
-<p>其中PyCharm、Anaconda、项目1是根据安装的软件和后面项目决定的，不用手动创建。</p>
-<h3 id="2安装软件"><a class="header" href="#2安装软件">2、安装软件</a></h3>
-<p>安装PyCharm、VSCode、Python(版本3.12左右即可,如果会Anacondla就不用下python了)</p>
-<h3 id="3了解主流框架"><a class="header" href="#3了解主流框架">3、了解主流框架</a></h3>
-<p>了解主流的后端框架:SpringBoot、Django。从下面表格给出的内容情况了解即可</p>
-<div class="table-wrapper"><table><thead><tr><th>前后端框架</th><th>就业、薪资情况</th><th>使用该技术的网页或公司</th><th>学习难度</th><th>需要的前置技术和知识</th></tr></thead><tbody>
-<tr><td>SpringBoot</td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Django</td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Vue</td><td></td><td></td><td></td><td></td></tr>
-<tr><td>React</td><td></td><td></td><td></td><td></td></tr>
-<tr><td>如有兴趣了解其他的</td><td></td><td></td><td></td><td></td></tr>
-</tbody></table>
-</div>
+<h2 id="参考"><a class="header" href="#参考">参考：</a></h2>
+<h3 id="将鼠标停留在代码上方后右上侧会出现按钮点击第二个运行按钮可以查看相关演示结果"><a class="header" href="#将鼠标停留在代码上方后右上侧会出现按钮点击第二个运行按钮可以查看相关演示结果">将鼠标停留在代码上方后，右上侧会出现按钮，点击第二个运行按钮可以查看相关演示结果</a></h3>
+<p>1、练习1：</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn main() {
+</span><span class="boring">   println!("         
+</span><span class="boring">   ╔══════════════════════════════════════════════╗");
+</span><span class="boring">   println!("    ║            九九乘法表 (1-9)                 ║");
+</span><span class="boring">   println!("     			
+</span><span class="boring">   ╚══════════════════════════════════════════════╝\n");
+</span>    for i in 1..=9 {
+        print!("    ");
+        for j in 1..=i {
+            let result = i * j;
+            print!("{j}×{i}={result:2}", j = j, i = i, result = result);
+        }
+        println!(); // 换行
+    }
+<span class="boring">   println!("\n    ✅ 九九乘法表打印完成！");
+</span><span class="boring">}</span></code></pre></pre>
+<p>2、练习2</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">fn is_leap_year(year: i32) -&gt; bool {
+</span><span class="boring">    (year % 4 == 0 &amp;&amp; year % 100 != 0) || (year % 400 == 0)
+</span><span class="boring">}
+</span><span class="boring">
+</span><span class="boring">fn days_in_month(month: u32, year: i32) -&gt; u32 {
+</span><span class="boring">    match month {
+</span><span class="boring">        1 | 3 | 5 | 7 | 8 | 10 | 12 =&gt; 31,
+</span><span class="boring">        4 | 6 | 9 | 11 =&gt; 30,
+</span><span class="boring">        2 =&gt; if is_leap_year(year) { 29 } else { 28 },
+</span><span class="boring">        _ =&gt; 0, // 无效月份
+</span><span class="boring">    }
+</span><span class="boring">}
+</span><span class="boring">
+</span><span class="boring">fn day_of_year(month: u32, day: u32, year: i32) -&gt; Option&lt;u32&gt; {
+</span><span class="boring">    if month &lt; 1 || month &gt; 12 {
+</span><span class="boring">        return None;
+</span><span class="boring">    }
+</span><span class="boring">
+</span><span class="boring">    let max_day = days_in_month(month, year);
+</span><span class="boring">    if day &lt; 1 || day &gt; max_day {
+</span><span class="boring">        return None;
+</span><span class="boring">    }
+</span><span class="boring">
+</span><span class="boring">    let mut total_days = day;
+</span><span class="boring">    for m in 1..month {
+</span><span class="boring">        total_days += days_in_month(m, year);
+</span><span class="boring">    }
+</span><span class="boring">
+</span><span class="boring">    Some(total_days)
+</span><span class="boring">}
+</span>
+<span class="boring">fn main() {
+</span>    println!("📅 计算某月某日是这一年的第几天");
+
+    let year = 2025;
+    let month =10;
+    let day = 19;
+
+    match day_of_year(month, day, year) {
+        Some(day_num) =&gt; {
+            println!("✅ {}年{}月{}日 是这一年的第 {} 天。", year, month, day, day_num);
+        }
+        None =&gt; {
+            println!("❌ 输入的日期不合法！");
+        }
+    }
+    
+    let year = 2025;
+    let month =19;
+    let day = 19;
+
+    match day_of_year(month, day, year) {
+        Some(day_num) =&gt; {
+            println!("✅ {}年{}月{}日 是这一年的第 {} 天。", year, month, day, day_num);
+        }
+        None =&gt; {
+            println!("❌ 输入的日期不合法！");
+        }
+    }
+<span class="boring">}</span></code></pre></pre>
+<p>3、</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">use std::collections::HashMap;
+</span><span class="boring">use std::io;
+</span><span class="boring">
+</span><span class="boring">fn main() {
+</span><span class="boring">    // ======================
+</span><span class="boring">    // 方式一：使用字典（HashMap）存储用户 - 推荐 ✅
+</span><span class="boring">    // ======================
+</span><span class="boring">    let mut user_db: HashMap&lt;String, String&gt; = HashMap::new();
+</span>    // 系统当前存在三个用户
+    user_db.insert("admin".to_string(), "123456".to_string());
+    user_db.insert("lenovo".to_string(), "password".to_string());
+    user_db.insert("xsaxl".to_string(), "qwerty".to_string());
+<span class="boring">    println!("🔐 欢迎使用用户登录系统");
+</span><span class="boring">    println!("admin, lenovo, xsaxl");
+</span>
+    // 获取用户输入 , 具体实现时让用户输入，此处写死方便演示
+<span class="boring">   println!("请输入用户名: xsaxl");
+</span>    let username = "admin";
+<span class="boring">   println!("请输入密码: 123456");
+</span>    let password = "123456";
+    
+<span class="boring">    // 去除换行符
+</span><span class="boring">   let username = username.trim();
+</span><span class="boring">   let password = password.trim();
+</span>
+<span class="boring">   // ✅ 使用 HashMap 查找（高效）
+</span>    // 登录验证
+    if let Some(stored_password) = user_db.get(username) {
+        if stored_password == password {
+            println!("✅ 登录成功！欢迎回来，{}！", username);
+            return;
+        }
+    }
+    // 如果没匹配上
+    println!("❌ 登录失败！用户名或密码错误。");
+<span class="boring">}</span></code></pre></pre>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../all.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../backend/py01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../front-end.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -217,13 +316,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../all.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../backend/py01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../front-end.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

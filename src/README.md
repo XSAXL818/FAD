@@ -17,9 +17,9 @@
 	</p>
 </div>
 
-[分类培养工作交流群提交处](https://wcn6gmfkzss8.feishu.cn/docx/BcX3d1yTWoJ2V7xtSDtchBxYn3b)
+[分类培养工作交流群提交处](https://wcn6gmfkzss8.feishu.cn/docx/BqpRdejc3o95uGxRKmPcFymTnEd?from=from_copylink)
 
-[全栈技术交流学习群提交处](https://wcn6gmfkzss8.feishu.cn/docx/F1SgdsklFo3TL3xFdwUcdfEzngf?from=from_copylink)
+[全栈技术交流学习群提交处](https://wcn6gmfkzss8.feishu.cn/docx/Mc1TdflfPo1lMlxFP3QcjQUpnnf?from=from_copylink)
 
 
 ---

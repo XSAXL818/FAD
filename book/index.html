@@ -185,8 +185,8 @@
     	作业提交链接如下(飞书)
 	</p>
 </div>
-<p><a href="https://wcn6gmfkzss8.feishu.cn/docx/BcX3d1yTWoJ2V7xtSDtchBxYn3b">分类培养工作交流群提交处</a></p>
-<p><a href="https://wcn6gmfkzss8.feishu.cn/docx/F1SgdsklFo3TL3xFdwUcdfEzngf?from=from_copylink">全栈技术交流学习群提交处</a></p>
+<p><a href="https://wcn6gmfkzss8.feishu.cn/docx/BqpRdejc3o95uGxRKmPcFymTnEd?from=from_copylink">分类培养工作交流群提交处</a></p>
+<p><a href="https://wcn6gmfkzss8.feishu.cn/docx/Mc1TdflfPo1lMlxFP3QcjQUpnnf?from=from_copylink">全栈技术交流学习群提交处</a></p>
 <hr />
 <div class="warning">
 	<p>
@@ -258,6 +258,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
