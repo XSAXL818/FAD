@@ -4,9 +4,10 @@
 
 ### 目录
 
-[1.Live Server](#1)
+[1.📖 Live Server](#1)
 
-[2.Trae AI](#2)
+[2.😎 Trae AI](#2)
+
 
 
 
