@@ -6,5 +6,4 @@
 
    
 
-## 参考
-[参考案例](../templates/xxgc.html)
+
