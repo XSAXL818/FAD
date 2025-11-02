@@ -15,7 +15,8 @@
     - [HTML 基础学习(第二周)](frontend/html01.md)
     - [HTML 练习(第三周)](frontend/html02.md)
   - [CSS基础](frontend/css-base.md)
-    - [CSS 基础学习(第四周)](frontend/css01.md)
+    - [CSS 选择器和字体样式(第四周)](frontend/css01.md)
+    - [CSS 盒子模型(第五周)](frontend/css02.md)
   - [扩展内容](frontend/web-ext.md)
     
 
@@ -27,6 +28,7 @@
     - [python 基础学习(第二周)](backend/py01.md)
     - [python 基础学习(第三周)](backend/py02.md)
     - [python 基础学习(第四周)](backend/py03.md)
+    - [python 基础学习(第五周)](backend/py04.md)
 
 ---
 
