@@ -17,9 +17,9 @@
 	</p>
 </div>
 
-[分类培养工作交流群提交处](https://wcn6gmfkzss8.feishu.cn/docx/Z8vcd7AtlogI8Vx8suVcA4a6ncg?from=from_copylink)
+[分类培养工作交流群提交处](https://wcn6gmfkzss8.feishu.cn/docx/Fk8ldKCC5oankxxk5KAcScMqnuc?from=from_copylink)
 
-[全栈技术交流学习群提交处](https://wcn6gmfkzss8.feishu.cn/docx/LNlndvlG6oMFNlxmDoecnvz8nJf?from=from_copylink)
+[全栈技术交流学习群提交处](https://wcn6gmfkzss8.feishu.cn/docx/L8x5dLB7GonAxzxpTNhc9T8rnLh?from=from_copylink)
 
 
 ---
@@ -38,7 +38,7 @@
 | 第二周 | 10月13-10月17    |
 | 第三周 | 10月20-10月24    |
 | 第四周 | 10月27-10月31    |
-| 第五周 | 10月27-10月31    |
+| 第五周 | 11月3-11月8    |
 
 
 分类培养工作交流群人员分类：
