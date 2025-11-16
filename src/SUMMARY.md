@@ -18,6 +18,7 @@
     - [CSS 选择器和字体样式(第四周)](frontend/css01.md)
     - [CSS 盒子模型(第五周)](frontend/css02.md)
     - [CSS 弹性盒布局(第六周)](frontend/css03.md)
+    - [CSS 定位、网格布局(第七周)](frontend/css04.md)
   - [扩展内容](frontend/web-ext.md)
     
 
@@ -32,6 +33,7 @@
     - [第五周（模块、文件操作）](backend/py04.md)
   - [python进阶](backend/python-advanced.md)
     - [第六周（面向对象）](backend/py05.md)
+    - [第七周（数据库/MySQL）](backend/py06.md)
 
 ---
 

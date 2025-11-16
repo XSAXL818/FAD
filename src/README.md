@@ -1,10 +1,7 @@
 # 介绍
+😅
+此为前后端学习的任务发布处，每周发布一次任务，如果学习过程有问题，可以群里提问。
 
-此为前后端学习的任务发布处，每周发布一次任务，如果学习过程有问题，可以群里提问，会将问题汇总及解答放在相应小节之下，方便查看。
-
-
-
-本次学习的核心目标是能独立打通前端或后端开发的完整流程。学习将遵循“实践导向”原则：先跑通流程建立整体认知，再针对薄弱环节或兴趣方向按需深入，通过项目实战巩固和拓展技能。
 
 
 
@@ -17,9 +14,9 @@
 	</p>
 </div>
 
-[分类培养工作交流群提交处](https://wcn6gmfkzss8.feishu.cn/docx/VWkBdvAaxoPpF8xkgHBcLHaqnfy?from=from_copylink)
+[分类培养工作交流群提交处](https://wcn6gmfkzss8.feishu.cn/docx/M4EFd0szBoFybWx2T89cn0s0nge?from=from_copylink)
 
-[全栈技术交流学习群提交处](https://wcn6gmfkzss8.feishu.cn/docx/BGVld0UeDonQXqxWXLjcVEMDnJg?from=from_copylink)
+[全栈技术交流学习群提交处](https://wcn6gmfkzss8.feishu.cn/docx/U6Ydd4EeaoOLrexVWbqcY5K7n9g?from=from_copylink)
 
 
 ---
@@ -40,7 +37,7 @@
 | 第四周 | 10月27-10月31    |
 | 第五周 | 11月3-11月8    |
 | 第六周 | 11月10-11月14    |
-
+| 第六周 | 11月17-11月22    |
 
 分类培养工作交流群人员分类：
 
